@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">	<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/modules/drilldown.js"></script>
+	<style type="text/css">
+		.contentText{
+			display: none;
+			width:800px;
+			padding:10px 10px 10px 10px;
+			line-height:150%;
+		}
+	</style>
+</head>
+<body>
+<div id="container" style="width:800px;height:400px"></div>
+<div id="c1_1_1" class="contentText">
+	本项主要考察支部开展党的理论学习和推优入党工作的情况，春、秋季学期各3分，基础评级为C级：<br><br>
+	1)	党课小组有可供开展宣传工作的平台，并平均每月产出一篇宣传作品的，等级提升一级；<br><br>
+	2)	由党课小组主办的各类理论学习活动，每学期不少于3次（或活动累计参与人次不少于50）的，等级提升一级；<br><br>
+	3)	党员和积极分子比例超过院系平均水平，或上学年推优入党数量达到院系学年新增积极分子总数25%以上的，等级提升一级；<br><br>
+</div>
+<div id="c1_1_2" class="contentText">
+	1)	上学年有成员代表学校或院系参加“求索杯”等党建相关的各类竞赛/大型活动，并进入复赛阶段的，给予A的评级；<br><br>
+	2)	上学年有成员代表学校或院系参加“求索杯”等党建相关的各类竞赛/大型活动但未获成绩，或参与院系举办的党建类比赛获奖的，给予B的评级；<br><br>
+	3)	上学年有成员参加过院系“求索杯”、“理论1+1”等各类竞赛/大型活动的，给予C的评级；<br><br>
+	4)	其余支部给予D的评级；<br><br>
+</div>
+<div id="c1_2_1" class="contentText">
+	本部分主要考察主题团日的组织情况，春、秋季学期各3分，基础评级为F级：<br><br>
+	1)	按时按质完成团日策划并根据校团委意见进行修改的支部，等级提升一级；<br><br>
+	2)	围绕“行健新百年，共筑中国梦”主题，就社会重大问题、热点问题等，开展调研、讨论、辩论等活动，学习和发扬社会主义核心价值观，结合学校全面深化综合改革的背景举办团日，支部参与度超过4/5的支部，等级提升一级。<br><br>
+	3)	参与学校集中主题团日并表现优异的支部，等级提升一级；<br><br>
+	4)	主题团日形式新颖且获得良好效果的支部，等级提升一级；<br><br>
+	5)	参选班团资源支持计划并完成最终答辩的支部，等级提升一级；<br><br>
+	6)	通过微信公众平台宣传支部团日并获得300以上阅读量的支部，等级提升一级。<br><br>
+</div>
+<div id="c1_2_2" class="contentText" >
+	本部分主要考察社会实践活动的组织参与情况，寒假实践占3分，暑期实践占7分：<br><br>
+	1)	获得校实践金/银奖的支部（支部同学需占支队总人数的40%及以上，支队长以3人计），给予A的评级（比例不足但有获奖的自动下调一级）；<br><br>
+	2)	获得校实践铜奖或院系实践金奖的支部（人数计算方法同上），给予B的评级；<br><br>
+	3)	支部参加实践比例达到15%及以上的支部（人数计算方法同上），给予C的评级；<br><br>
+	4)	其余支部给予D的评级；<br><br>
+	5)	支部参加实践比例达到70%及以上（人数计算方法同上）或支队数占院系当季实践支队数50%以上的，等级提升一级；<br><br>
+</div>
+<div id="c1_3_1" class="contentText" >
+	本项主要考察本学年宿舍卫生成绩：<br><br>
+	1)	平均成绩在90分以上的，给予B的评级；<br><br>
+	2)	平均成绩在80~90分的，给予C的评级；<br><br>
+	3)	平均成绩在80分以下的，应给予D或以下的评级；<br><br>
+	4)	获得学校十佳宿舍、百优宿舍等称号的宿舍所在的支部，等级提升一级；<br><br>
+</div>
+<div id="c1_3_2" class="contentText" >
+	本项主要考察本学年支部同学参与志愿活动的情况，基础评级D级：<br><br>
+	1)	志愿者注册人数达到支部总人数2/3以上的，等级提升一级；<br><br>
+	2)	平均志愿时长达到2小时（单次无偿献血每单位折算志愿时长2小时）及以上，或半数以上的同学至少参与过一次志愿活动的，等级提升一级；<br><br>
+	3)	以支部为单位组织过各类志愿公益活动的，等级提升一级；<br><br>
+	4)	支部成员因志愿公益活动受到学校表彰的，等级提升一级；<br><br>
+</div>
+<div id="c2_1_1" class="contentText" >
+	本项主要考察秋季学期支部同学的专业学习成绩，基础评级为B级：<br><br>
+	1)	秋季学期支部平均绩点在3.4以上，或人均不通过门次小于等于0.1的，等级提升一级；<br><br>
+	2)	秋季学期人均不通过门次超过0.25的，等级下调一级；<br><br>
+	3)	支部成员有考试作弊、作业抄袭等情况，视情节轻重，直接给予F的评级；<br><br>
+</div>
+<div id="c2_1_2" class="contentText" >
+	本项主要考察本学年支部开展学风建设的情况，基础评级为D级：<br><br>
+	1)	以学风班会、集体学习、互帮互助、讲座论坛等形式开展过学风建设活动，参与人数达到支部总人数2/3以上的，等级提升一级；<br><br>
+	2)	支部学风建设活动常态化、制度化，每学期组织3次及以上的，等级提升一级；<br><br>
+	3)	通过组织各类学风建设活动，支部总体成绩有明显提升，或对后进同学帮助显著的，等级提升一级； <br><br>
+</div>
+<div id="c2_2_1" class="contentText" >
+	本项主要考察本学年支部成员参与校内外各类学术科技竞赛和学术会议的情况，基础评级为C级：<br><br>
+	1)	成员在校“挑战杯”或校外三、四星级及以上学术科技赛事中获特等、一等奖，或在校外五星级学术科技赛事中获奖的支部，给予A的评级；<br><br>
+	2)	成员在CCF目录A、B级的或同级别国际学术会议上发表论文的支部，给予A的评级；<br><br>
+	3)	成员在校“挑战杯”或校外三星级及以上学术科技赛事中获得二等、三等奖的支部，给予B的评级；<br><br>
+	4)	上学年在校内重大学术科技赛事中获特等、一等奖人次数大于等于3，或参与各类学术科技竞赛人次数大于等于10的支部，评级提升一级；<br><br>
+	5)	上学年无人参与学术科技竞赛或学术会议的支部，给予D的评级。<br><br>
+</div>
+<div id="c2_2_2" class="contentText" >
+	本项考察支部成员在校内外创新、创业、学术支持项目（包括SRT、SSRT、学推、星火、北创、国创等）中的参与度，基础评级为C级：<br><br>
+	1)	支部上学年在各类科创支持项目中自主立项的项目数大于等于3的，等级提升一级；<br><br>
+	2)	支部上学年参与各类科创支持项目人次数大于等于10的，等级提升一级；<br><br>
+	3)	支部上学年无人参与上述科创支持项目的，等级下调一级。<br><br>
+</div>
+<div id="c3_1_1" class="contentText" >
+	本项考察支部成员在校系体育赛事中的获奖情况，基础评级为C级；<br><br>
+	1)	上学年支部成员在马约翰杯中获得总分超过3分（团体项目成员个人得分记为团体得分的1/4，队长记为1/2），给予A的评级；<br><br>
+	2)	上学年支部成员在马约翰杯中获得奖励，或在系内赛中获得冠军的支部，给予B的评级；<br><br>
+	3)	上学年支部成员在各类体育比赛中曾经获得奖励的支部，给予C的评级；<br><br>
+	4)	上学年支部成员未在体育赛事中获奖的，给予D的评级；<br><br>
+	5)	马约翰杯和系内比赛以外的体育赛事中的获奖情况，由学生会视赛事规格在原有基础上做升降级处理；<br><br>
+</div>
+<div id="c3_1_2" class="contentText" >
+	本项考察支部成员参与各类校系体育赛事的情况，基础评级为C级；<br><br>
+	1)	支部成员上学年参与各类学校体育赛事人次数超过15（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数50%的，给予A的评级；<br><br>
+	2)	支部成员上学年参与各类学校体育赛事人次数超过10（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数30%的，给予B的评级；<br><br>
+	3)	支部上学年无同学参与各类体育赛事的，给予D的评级；<br><br>
+</div>
+<div id="c3_2_1" class="contentText" >
+	本项考察支部开展或参与群众体育工作的情况，基础评级为B级；<br><br>
+	1)	支部每10人次参与院系、学校统一组织的体育活动或各类体育俱乐部（社团），等级提升一级；<br><br>
+	2)	支部每2人次（上取整）体育课不通过，等级下调一级；<br><br>
+</div>
+<div id="c3_2_2" class="contentText" >
+	1)	上学年支部内部开展4次及以上足、篮、排、羽、乒乓等日常群众体育活动的给予A的评级；<br><br>
+	2)	活动组织3~4次的，给予B的评级；<br><br>
+	3)	组织1~2次的，给予C的评级；<br><br>
+	4)	未组织过群众体育活动的，给予D的评级；<br><br>
+	5)	活动需支部50%以上成员参与，举办较大活动且在校系产生一定影响的，酌情提升等级；<br><br>
+</div>
+<div id="c4_1_1" class="contentText" >
+	1)	支部成员单学期参与支部事业人次超过支部总人数4/5的，等级提升一级，不足1/2的，等级下调一级；<br><br>
+	2)	完成支部设定的，与集体凝聚力相关可量化目标的，等级提升一级。 <br><br>
+</div>
+<div id="c4_1_2" class="contentText" >
+	1)	支部成员获得与支部事业相关，校级以上嘉奖的，每人次等级提升一级；<br><br>
+	2)	完成支部设定的，与育人成效相关可量化目标的，等级提升一级。<br><br>
+	3)	支部在组织支部事业过程中如果有其他能表现育人成效的成果，可根据成果的内容酌情提升等级。<br><br>
+</div>
+<div id="c4_2_1" class="contentText" >
+	1)	支部在组织支部事业的过程中合理利用院系级学生组织提供的各类资源的，等级提升一级；<br><br>
+	2)	支部在组织支部事业的过程中合理利用校级学生组织提供的各类资源的，等级提升一级；<br><br>
+	3)	支部在组织支部事业的过程中结合支部事业主题整合多项支部活动的，等级提升一级。<br><br>
+</div>
+<div id="c4_2_2" class="contentText" >
+	1)	支部在支部微信公众平台上发表与支部事业相关的宣传文章并获得200以上阅读量的，每一篇等级提升一级。<br><br>
+	2)	支部在院系级微信公众平台上发表与支部事业相关的宣传文章，累计每获得500阅读量等级提升一级。<br><br>
+	3)	坚持宣传支部事业相关内容并获得持续影响的可酌情提升等级。<br><br>
+</div>
+<div id="c4_2_3" class="contentText" >
+	支部事业开展过程中发表与支部事业相关特色成果的支部，根据特色成果的质量酌情提升等级。
+</div>
+<div id="c4_3" class="contentText" >
+	1)	开展同类型或同主题支部事业一年或一年以上的，等级提升一级；<br><br>
+	2)	完成支部设定的，与支部文化建设相关可量化目标的，等级提升一级；<br><br>
+	3)	支部在组织支部事业过程中如果有其他与支部文化建设相关的成果，可根据成果的内容酌情提升等级。<br><br>
+</div>
+<div id="c4" class="contentText" >
+	本项主要考察本学年支部事业的开展情况：<br><br>
+	每个支部每学期都需要拟定本学期支部事业的主题，并至少开展一次与该主题相关的活动，若两学期均没有开展相关活动，则支部事业模块各项评级为F级，只开展一次活动，则各项基础评级均为E级，两学期均开展符合要求的活动,基础评级为D级。
+</div>
+<div id="c5" class="contentText" >
+	各支部撰写支部工作案例，介绍具有自身特色的典型工作及其成效。结合支部工作案例材料进行审核打分，1、2名，3、4名，5、6名的支部分别给予A、B、C的评级。
+</div>
+<script>
+	$(function () {
+		$(".contentText").hide();
+		Highcharts.setOptions({
+			lang:{
+				drillUpText:"返回上一级"
+			}
+		});
+		$('#container').highcharts({
+			chart: {
+				plotBackgroundColor: null,
+				plotBorderWidth: null,
+				plotShadow: false,
+				events: {
+					drillup: function(e) {$(".contentText").hide();}
+				}
+			},
+			title: {
+				text: '2016-2017学年软件学院团支部等级评估表彰细则'
+			},
+			credits: {
+				text: '共青团清华大学软件学院委员会'
+			},
+			tooltip: {
+				headerFormat: '',
+				pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+			},
+			plotOptions: {
+				pie: {
+					allowPointSelect: true,
+					cursor: 'pointer',
+					dataLabels: {
+						enabled: true,
+						format: '<b>{point.name}</b>: {point.y} 分',
+						style: {
+							color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+						}
+					}
+				}
+			},
+			series: [{
+				type: 'pie',
+				data: [
+					{name: '动态评估', y: 70, drilldown: 'p1'},
+					{name: '风采展示', y: 30, drilldown: 'p2'}
+				]
+			}],
+			drilldown: {
+				series: [
+					{
+						id: 'p1',
+						type: 'pie',
+						data: [
+							{name: '[1]思想引领', y: 30, drilldown: 'p1_1'},
+							{name: '[2]专业学习', y: 8, drilldown: 'p1_2'},
+							{name: '[3]体育氛围', y: 7, drilldown: 'p1_3'},
+							{name: '[4]支部事业', y: 20, drilldown: 'p1_4', events: {click: function (event) {$(".contentText").hide();$("#c4").show();}}},
+							{name: '[5]特色工作', y: 5, events: {click: function (event) {$(".contentText").hide();$("#c5").show();}}}
+						]
+					},
+					{
+						id: 'p2',
+						type: 'pie',
+						data: [
+							{name: '思想引领', y: 5},
+							{name: '专业学习', y: 2},
+							{name: '体育氛围', y: 3},
+							{name: '支部事业', y: 15, drilldown: 'p2_1'},
+							{name: '特色发展', y: 5}
+						]
+					},
+					{
+							id: 'p1_1',
+							type: 'pie',
+							data: [
+								{name: '[1-1]党建工作', y: 9, drilldown: 'p1_1_1'},
+								{name: '[1-2]主题教育开展', y: 16, drilldown: 'p1_1_2'},
+								{name: '[1-3]道德文明公益教育', y: 5, drilldown: 'p1_1_3'}
+							]
+					},
+					{
+						id: 'p1_1_1',
+						type: 'pie',
+						data: [
+							{name: '[1-1-1]党的基本理论学习', y: 6, events: {click: function (event) {$(".contentText").hide();$("#c1_1_1").show();}}},
+							{name: '[1-1-2]校系相关活动参与', y: 3, events: {click: function (event) {$(".contentText").hide();$("#c1_1_2").show();}}},
+						]
+					},
+					{
+						id: 'p1_1_2',
+						type: 'pie',
+						data: [
+							{name: '[1-2-1]主题团日', y: 6, events: {click: function (event) {$(".contentText").hide();$("#c1_2_1").show();}}},
+							{name: '[1-2-2]实践活动开展', y: 10, events: {click: function (event) {$(".contentText").hide();$("#c1_2_2").show();}}},
+						]
+					},
+					{
+						id: 'p1_1_3',
+						type: 'pie',
+						data: [
+							{name: '[1-3-1]基础文明', y: 1, events: {click: function (event) {$(".contentText").hide();$("#c1_3_1").show();}}},
+							{name: '[1-3-2]公益精神', y: 4, events: {click: function (event) {$(".contentText").hide();$("#c1_3_2").show();}}},
+						]
+					},
+					{
+							id: 'p1_2',
+							type: 'pie',
+							data: [
+								{name: '[2-1]学风建设', y: 4, drilldown: 'p1_2_1'},
+								{name: '[2-2]科技与学术', y: 4, drilldown: 'p1_2_2'}
+							]
+					},
+					{
+						id: 'p1_2_1',
+						type: 'pie',
+						data: [
+							{name: '[2-1-1]学风建设成果', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c2_1_1").show();}}},
+							{name: '[2-1-2]学风建设工作开展', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c2_1_2").show();}}},
+						]
+					},
+					{
+						id: 'p1_2_2',
+						type: 'pie',
+						data: [
+							{name: '[2-2-1]科技竞赛参与度和成果', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c2_2_1").show();}}},
+							{name: '[2-2-2]科创支持项目参与度', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c2_2_2").show();}}},
+						]
+					},
+					{
+							id: 'p1_3',
+							type: 'pie',
+							data: [
+								{name: '[3-1]竞技体育', y: 4, drilldown: 'p1_3_1'},
+								{name: '[3-2]群众体育', y: 3, drilldown: 'p1_3_2'}
+							]
+					},
+					{
+						id: 'p1_3_1',
+						type: 'pie',
+						data: [
+							{name: '[3-1-1]校系体育赛事成绩', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c3_1_1").show();}}},
+							{name: '[3-1-2]校系体育赛事参与', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c3_1_2").show();}}},
+						]
+					},
+					{
+						id: 'p1_3_2',
+						type: 'pie',
+						data: [
+							{name: '[3-2-1]群众体育开展成果', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c3_2_1").show();}}},
+							{name: '[3-2-2]自主开展体育活动情况', y: 1, events: {click: function (event) {$(".contentText").hide();$("#c3_2_2").show();}}},
+						]
+					},
+					{
+							id: 'p1_4',
+							type: 'pie',
+							data: [
+								{name: '[4-1]支部建设目标', y: 8, drilldown: 'p1_4_1'},
+								{name: '[4-2]支部事业特点', y: 8, drilldown: 'p1_4_2'},
+								{name: '[4-3]支部文化建设', y: 4, events: {click: function (event) {$(".contentText").hide();$("#c4_3").show();}}}
+							]
+					},
+					{
+						id: 'p1_4_1',
+						type: 'pie',
+						data: [
+							{name: '[4-1-1]集体凝聚力', y: 3, events: {click: function (event) {$(".contentText").hide();$("#c4_1_1").show();}}},
+							{name: '[4-1-2]育人成效', y: 5, events: {click: function (event) {$(".contentText").hide();$("#c4_1_2").show();}}},
+						]
+					},
+					{
+						id: 'p1_4_2',
+						type: 'pie',
+						data: [
+							{name: '[4-2-1]资源整合', y: 2, events: {click: function (event) {$(".contentText").hide();$("#c4_2_1").show();}}},
+							{name: '[4-2-2]活动影响力', y: 3, events: {click: function (event) {$(".contentText").hide();$("#c4_2_2").show();}}},
+							{name: '[4-2-3]特色成果', y: 3, events: {click: function (event) {$(".contentText").hide();$("#c4_2_3").show();}}}
+						]
+					},
+					{
+						id: 'p2_1',
+						type: 'pie',
+						data: [
+							{name: '目的性', y: 3},
+							{name: '系统性', y: 2},
+							{name: '持续性', y: 2},
+							{name: '参与度', y: 3},
+							{name: '活动成果', y: 5}
+						]
+					}
+				]
+			}
+		});
+	});
+
+</script>
+</body>
+</html>

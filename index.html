@@ -150,7 +150,11 @@
 </div>
 <script>
 	$(function () {
-		$("#container").width($(window).width());
+		if($(window).width() < 1000)
+		{
+			$("#container").width("375px");
+		}
+		
 		$(".contentText").hide();
 		Highcharts.setOptions({
 			lang:{

@@ -2,22 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8">
-<link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1">	<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+	<link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://img.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
 	<script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
 	<script src="https://img.hcharts.cn/highcharts/modules/data.js"></script>
 	<script src="https://img.hcharts.cn/highcharts/modules/drilldown.js"></script>
 	<style type="text/css">
 		.contentText{
 			display: none;
-			width:800px;
+			width:100%;
 			padding:10px 10px 10px 10px;
 			line-height:150%;
+			font-size:small;
 		}
 	</style>
 </head>
 <body>
-<div id="container" style="width:800px;height:400px"></div>
+<div id="container" style="width:100%; padding:5px 5px 5px 5px;"></div>
 <div id="c1_1_1" class="contentText">
 	本项主要考察支部开展党的理论学习和推优入党工作的情况，春、秋季学期各3分，基础评级为C级：<br><br>
 	1)	党课小组有可供开展宣传工作的平台，并平均每月产出一篇宣传作品的，等级提升一级；<br><br>
@@ -89,7 +91,7 @@
 </div>
 <div id="c3_1_1" class="contentText" >
 	本项考察支部成员在校系体育赛事中的获奖情况，基础评级为C级；<br><br>
-	1)	上学年支部成员在马约翰杯中获得总分超过3分（团体项目成员个人得分记为团体得分的1/4，队长记为1/2），给予A的评级；<br><br>
+	1)	上学年支部成员在马约翰杯中获得总分超过80分（团体项目成员个人得分记为团体得分的1/4，队长记为1/2），给予A的评级；<br><br>
 	2)	上学年支部成员在马约翰杯中获得奖励，或在系内赛中获得冠军的支部，给予B的评级；<br><br>
 	3)	上学年支部成员在各类体育比赛中曾经获得奖励的支部，给予C的评级；<br><br>
 	4)	上学年支部成员未在体育赛事中获奖的，给予D的评级；<br><br>
@@ -97,8 +99,8 @@
 </div>
 <div id="c3_1_2" class="contentText" >
 	本项考察支部成员参与各类校系体育赛事的情况，基础评级为C级；<br><br>
-	1)	支部成员上学年参与各类学校体育赛事人次数超过15（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数50%的，给予A的评级；<br><br>
-	2)	支部成员上学年参与各类学校体育赛事人次数超过10（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数30%的，给予B的评级；<br><br>
+	1)	支部成员上学年参与各类学校体育赛事人次数超过15（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数30%的，给予A的评级；<br><br>
+	2)	支部成员上学年参与各类学校体育赛事人次数超过10（代表队队长按3人次计）的，或在系内体育赛事中参与人数超过支部总人数15%的，给予B的评级；<br><br>
 	3)	支部上学年无同学参与各类体育赛事的，给予D的评级；<br><br>
 </div>
 <div id="c3_2_1" class="contentText" >
@@ -111,7 +113,7 @@
 	2)	活动组织3~4次的，给予B的评级；<br><br>
 	3)	组织1~2次的，给予C的评级；<br><br>
 	4)	未组织过群众体育活动的，给予D的评级；<br><br>
-	5)	活动需支部50%以上成员参与，举办较大活动且在校系产生一定影响的，酌情提升等级；<br><br>
+	5)	活动有支部50%以上成员参与，举办较大活动且在校系产生一定影响的，酌情提升等级；<br><br>
 </div>
 <div id="c4_1_1" class="contentText" >
 	1)	支部成员单学期参与支部事业人次超过支部总人数4/5的，等级提升一级，不足1/2的，等级下调一级；<br><br>
@@ -190,8 +192,8 @@
 			series: [{
 				type: 'pie',
 				data: [
-					{name: '动态评估', y: 70, drilldown: 'p1'},
-					{name: '风采展示', y: 30, drilldown: 'p2'}
+					{name: '函评部分', y: 70, drilldown: 'p1'},
+					{name: '答辩部分', y: 30, drilldown: 'p2'}
 				]
 			}],
 			drilldown: {
